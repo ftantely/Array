@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<p id="eight"></p>
+<p id="nine"></p>
+<p id="ten"></p>
+<p id="eleven"></p>
+
+
+<script>
+
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"]
+
+    document.getElementById("eight").innerHTML=fruits.join("*");
+    document.getElementById("nine").innerHTML=fruits.pop("Orange");
+    document.getElementById("ten").innerHTML=fruits.shift();
+    function myFunction() {
+        fruits.unshift("peach");
+        document.getElementById("eleven").innerHTML=fruits;
+    }
+    myFunction();
+</script>
+</body>
+</html>
